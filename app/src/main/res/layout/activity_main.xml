@@ -1,0 +1,19 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="#EDF3F8">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Погода в городе" android:textSize="28sp" android:textStyle="bold" android:textColor="#173F60"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Практическое занятие 5.1 • API и JSON" android:layout_marginBottom="20dp" android:textColor="#486278"/>
+<EditText android:id="@+id/cityInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="Город, например Москва" android:inputType="textCapWords" android:singleLine="true" android:text="Екатеринбург"/>
+<EditText android:id="@+id/keyInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="API-ключ OpenWeatherMap" android:inputType="textPassword" android:singleLine="true" android:saveEnabled="false"/>
+<Button android:id="@+id/loadButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Получить погоду из API"/>
+<Button android:id="@+id/demoButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Демо без интернета"/>
+<ProgressBar android:id="@+id/progress" android:layout_width="32dp" android:layout_height="32dp" android:layout_gravity="center" android:visibility="gone"/>
+<TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Введите ключ для запроса или нажмите Демо." android:paddingTop="12dp" android:paddingBottom="12dp" android:textColor="#486278" android:accessibilityLiveRegion="polite"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/panel">
+<TextView android:id="@+id/cityText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Город —" android:textSize="24sp" android:textStyle="bold" android:textColor="#173F60"/>
+<TextView android:id="@+id/temperatureText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="— °C" android:textSize="48sp" android:textColor="#245C88"/>
+<TextView android:id="@+id/descriptionText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Описание —" android:textSize="18sp"/>
+<TextView android:id="@+id/pressureText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Давление —" android:textSize="18sp"/>
+<TextView android:id="@+id/windText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Ветер —" android:textSize="18sp"/>
+</LinearLayout>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Данные: OpenWeatherMap. Демо использует учебный JSON и не показывает текущую погоду." android:textSize="12sp" android:layout_marginTop="16dp" android:textColor="#486278"/>
+</LinearLayout></ScrollView>
